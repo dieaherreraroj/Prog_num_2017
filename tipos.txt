@@ -1,0 +1,125 @@
+
+	OBJETOS, TIPOS Y VALORES
+
+-Al momento de lidiar con inputs, nos encontra-
+ mos con la necesidad de guardar la informa-
+ ción que leemos.
+
+-Este "lugar" en la memoria del computador se
+ llama OBJETO. Este tiene un TIPO que le dice
+ que clase de info puede almacenar. Un objeto
+ con nombre se llama VARIABLE.
+
+-Cuando se pide por un input, la sentencia ad-
+ quiere el nombre de PROMPT.
+
+-La sentencia, p.e.: string first_name, aparta
+ un espacio en memoria para la variable.
+
+    	    ESTO SE LLAMA DEFINICIÓN
+
+NOTA: cin y cout son las funciones de captura
+      e impresión de datos ESTÁNDAR de c++11.
+
+      BUSCAR OTRAS FORMAS DE REALIZAR ESTAS
+      TAREAS Y COMPARAR.
+
+-Siempre que se pueda evitar escribir comandos
+ extra, HAY QUE HACERLO (!!!).
+
+-Todo aquello que se quiera imprimir va entre
+ comillas dobles.
+
+-Es ABSOLUTAMENTE importante recordar el tipo
+ de cada variable definida, esto es un error co-
+ mún.
+
+Tipos de datos comunes:
+
+-Un tipo importante es el double. Es una
+ forma de resumir punto flotante de doble
+ precisión.
+
+-Un (1) caracter se almacena con el tipo char:
+
+    	    p. e.: char inicial='A'.
+
+ Es importante observar que lleva COMILLAS SIM-
+ PLES.
+
+-Una cadena de caracteres se almacena en una
+ variables tipo string:
+
+
+ 	  p. e.: string nombre="DIEGO"
+
+ Es importante notar que aquí lleva COMILLAS
+ DOBLES.
+
+-Otros son int, float, bool.
+
+-Consideremos las siguientes instrucciones:
+
+       cout<<"Entre su nombre y edad: \n";
+       string nombre;
+       int edad=0;
+       cin>>nombre;
+       cin>>edad;
+
+ Si se ingresa "Carlos 22", "Carlos" se almace-
+ na en la variable string nombre, mientras que
+ "22" se almacena e la variable int edad.
+
+IMPORTANTE: Existe una convención llamada
+	    WHITESPACE, que hace que una
+	    cadena de caracteres se termine
+	    de leer cuando se ingresa un
+	    espacio entre ellos.
+	    
+(!!!)  Para observar esta convención en acción
+       correr whitespace.cpp, y edad.cpp
+       
+-Los operadores >> y << son sensibles al tipo de
+ dato que se está leyendo. Por lo tanto:
+ 
+ ES POSIBLE LEER Y ESCRIBIR VARIAS VARIABLES EN UNA
+ MISMA INSTRUCCIÓN UTILIZANDO LA SINTAXIS:
+ 
+		  cin>>a>>b>>c;
+		 cout<<a<<b<<c;
+		 
+Operadores y operaciones:
+
+-Los operadores están definidos de forma distinta para ca-
+ da tipo de variable:
+ 
+ OPERADORES NUEVOS IMPORTANTES:
+ 
+    -(s>>x): lee desde s en x. Es decir, va de s a x.
+    -(s<<x): escribe en s desde x. ES decir, va de x a s
+    *(str1<=str2): Para strings. Compara el orden alfabético
+    
+-OJO con el operador de asignación (=). La instrucción:
+
+			  a=a+7
+			 
+ Realiza la siguiente secuencia de actividades:
+ 1) Toma el valor de a.
+ 2) Suma 7 al valor de a
+ 3) Toma el valor de la suma y lo guarda en a.
+ 
+IMPORTANTE: Esto último vale para cadenas de caracteres, no
+	    solo enteros y números de punto flotante.
+	    
+-Hay una diferencia sutil entre o que significa incializar
+ una variable, y asignarle un valor:
+ 
+	EN UNA INICIALIZACIÓN, EL COMPUTADOR TOMA EL
+	ESPACIO VACÍO EN MEMORIA Y LO LLENA CON ALGO
+	PERO EN UNA ASIGNACIÓN, BORRA LO QUE ESTABA
+	PARA ESCRIBIR EL VALOR QUE SE DESEA ASIGNAR.
+	
+ Además, en una inicialización, se debe decir cuál es el ti-
+ po de la variable (que se está creando). Mientras que en u-
+ na asignación, esto ya se presupone.
+ 
