@@ -1,0 +1,98 @@
+		     CAPÍTULO 3: COMPUTACIÓN
+		     
+Computación:
+
+- Desde un punto de vista, el progrmador COMPUTA:
+
+    TOMA CIERTOS INPUTS PARA PRODUCIR CIERTOS OUTPUTS.
+    
+- Los inputs pueden provenir de una gran cantidad de fuentes:
+
+	      (*) Teclado, Mouse, Pantalla tácti...
+	      (*) Archivos
+	      (*) Otros programas o partes de estos.
+	      (*) Sensores de temperatura, teclado musical...
+	      
+IMPORTANTE: LAS OPCIONES SON BÁSICAMENTE INFINITAS...
+
+- Para manejar los inputs, el programa contiene una estructura 
+  de datos o estado. Muchos de los inputs almacenados están 
+  desde el inicio del programa y otros se creean conforme se a-
+  vanza en el desarrollo de las instrucciones del programa.
+  
+IMPORTANTE: Nos vamos a concentrar en la articulación de un pro-
+	    grama como una serie de partes que cooperan e inter-
+	    cambian datos. (!!!).
+	    
+- ES de capital importancia el análisis de un problema en sub-
+  problemas que puedan ser resueltos más fácilmente.
+  
+- Los inputs de una subrutina de un programa se llaman argumentos,
+  y los outputs, resultados.
+  
+    (!!!)	UN PROGRAMA DEBE EXPRESAR LOS CÓMPUTOS:
+		1) CORRECTAMENTE.
+		2) CLARAMENTE.
+		3) EFICIENTEMENTE.
+		
+		Y EN ESE ORDEN....
+		
+- Cuando se desarrolla un programa bien estructurado, claro y co-
+  rrecto, es más sencillo identificar errores y corregirlos en el 
+  futuro. 
+  
+- Sigue la estrategia de "divide y vencerás":
+
+	TOMA UN PROBLEMA GRANDE Y DIFÍCIL, Y DIVÍDELO EN
+	TAREAS MÁS SENCILLAS DE LLEVAR A CABO.
+	
+- A la hora de dividir un programa en varias partes cooperantes 
+  tienes que tener en cuenta cuáles son las librerías de las que 
+  dispones, y qué herrameitnas tienen a tu disposición.
+  
+- Si deseas escribir algo permanente y razonablemente duradero, de-
+  bes prestar atención a las cuestiones realtivas a la estructura 
+  del código, y la organización a lo largo del camino, antes que 
+  aprender del fracaso.
+  
+Expresiones:
+
+- La expresiones son el bloque de construcción de un programa más 
+  básico.
+  
+- En una expresión se plasma un conjunto de poeraciones que tienen
+  precedencia. Si hay duda sobre la precedencia:
+  
+	  USAR PARÉNTESIS PUEDE SALVAR EL DÍA...
+	  
+  Pero muchos paréntesis pueden hacer que el código sea menos le-
+  gible. Así que memoriza suficientes reglas de precedencia para
+  que no sufras con tu código.
+  
+- Cuando hagas un programa que realice ciertos cómputos, vas a te-
+  ner que utilizar constantes. Para evitar que aparezcan como cons-
+  tantes mágicas, es mejor que utilizaes el comando, p. e.:
+  
+		    constexpr int pi=3.141516
+	      
+- Cuando se tienen variables cuyo valor no cambia desde la inciali-
+  zación, pero cuyo valor es desconocido al inicio de la compilación 
+  del programa se utiliza el comando:
+  
+		    const double toler=3.13e-7
+		    
+  Estas variables son muy útiles en programación.
+  
+- En general, una forma de decir algo en un programa es mejor que o-
+  tro si expresa más directamente la idea buscada. (Este es un argu-
+  mento de correctitud).
+  
+NOTA: Para convertir el valor de una variable de un tipo a otro uti-
+      lizamos la instrucción type(variable). Pero...
+      
+	    OJO CON LAS CONVERSIONES INSEGURAS...
+	    
+      para cambiar el valor de una variable de un tipo a otro ten en 
+      cuenta el tamaño de la misma, así evitas pérdida de informa-
+      ción, y errores en la compilación del programa.
+      
